@@ -96,12 +96,19 @@ h1 {
     display: grid;
     grid-row: 2 / 3;
     grid-column: 2 / 3; 
-    grid-template-columns: repeat(3, 1fr);
-    gap:15px;
-
+    grid-template-rows: 1fr 6fr;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight:500;
 }
 
-.projects>div {
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+}
+
+.cards>div {
     background-color:#7dd3fc ;
     box-shadow: -5px 7px 10px lightgrey ;
     border-radius: 10px
@@ -117,21 +124,24 @@ h1 {
 #signUpForm:hover {
     transform: scale(1.3);
     filter: brightness(50%);
+    transition: 0.5s;
 }
 
 #formHover {
     font-size: 35px;
     font-weight: bold;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: blue; 
+    color: rgb(48, 48, 132); 
     opacity: 0.7;
     display: grid; 
+    text-align: center;
     visibility: hidden;
 }
 
 formHover:hover {
     visibility: visible;
     filter: brightness(120%);
+    transition: 0.5s;
 }
 
 
@@ -139,12 +149,18 @@ formHover:hover {
     background-image: url(icons/clip-web-design.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 #calculator {
     background-image: url(icons/urban-867.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -152,18 +168,27 @@ formHover:hover {
     background-image: url(icons//clip-hand-with-scissors.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 #LandingPg {
     background-image: url(icons/buddy-38.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 #OdinRecipes {
     background-image: url(icons/bloom-online-cooking-lesson.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .announcements{
