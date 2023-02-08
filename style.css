@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    display: grid;
+}
 .container {
     min-height: 928px;
     display: grid;
     grid-template-rows: 1fr 3fr 2fr;
     grid-template-columns: 1.5fr 3fr 1fr;
     background-color: #f0f9ff;
-    gap: 15px
+    gap: 15px;
 }
 
 #dash {
@@ -138,7 +140,8 @@ h1 {
     visibility: hidden;
 }
 
-formHover:hover {
+.projects>div>div>div:hover {
+    font-size: 40px;
     visibility: visible;
     filter: brightness(120%);
     transition: 0.5s;
@@ -192,10 +195,47 @@ formHover:hover {
 }
 
 .announcements{
+    justify-content: center;
     display: grid;
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+    grid-template-rows: 1fr 8fr;
+    padding: 10%;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #075985;
+    color: white;
+    font-size: 25px;
+    position: sticky;
+    border-radius: 15px;
+    box-shadow:-5px 7px 10px lightgrey;
+}
+
+.thr_announcements {
+    background-color: #075985;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+}
+
+.thr_announcements>div {
+    padding-bottom: 20px;
+    border-bottom: white solid 1px;
+    font-size: 17px;
+}
+
+.thr_announcements>#one {
+    border-top:white solid 01px;
+    padding-top: 20px;
+    margin-top: -15px;
+}
+
+
+
+.announceOne,
+.announceTwo,
+.announceThree {
+    font-size: 11px;
 }
 
 .stats {
@@ -203,10 +243,87 @@ formHover:hover {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     background-color: #075985;
+    border-radius: 15px;
+    box-shadow: -5px 7px 10px lightgrey ;
+    background-image: url(icons/3d-casual-life-chart-and-statistics.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.stats>h1 {
+    font-size: 90px;
+    text-align: right;
+    align-items: end; 
+    color: #bae6fd;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+}
+
+.stats>p{
+    display: grid;
+    align-self: start;
+    font-size: 20px;
+    color: #bae6fd;
+    display: grid;
+    text-align: right;
+    padding: 25px;
+}
+
+a {
+    color: #bae6fd;
 }
 
 .top_performance {
     display: grid;
     grid-row: 3 / 4;
     grid-column: 3 / 4;
+    background-color: #7dd3fc;
+    border-radius: 15px;
+    box-shadow: -5px 7px 10px lightgrey ;
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: 1fr 4fr;   
+}
+
+.top_performance>p {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    font-size: 25px;
+    justify-self: center; 
+    align-content: center;
+    color:  rgb(48, 48, 132);
+}
+
+.top_performance>.profilePics {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-content: center ;
+   
+}
+
+.top_performance>.userNames  {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-content: start;
+    padding-right: 10px;
+    color:  rgb(48, 48, 132);
+}
+
+#usernameOne>p,
+#usernameTwo>p,
+#usernameThree>p,
+#usernameFour>p {
+    font-size: 12px;
+}
+
+.userNames>div>h3 {
+    font-size: 15px;
+}
+
+.profilePics>div>img {
+    height: 32px;
+    width: 32px;
 }
