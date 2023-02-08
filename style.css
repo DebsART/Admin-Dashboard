@@ -129,10 +129,10 @@ h1 {
     transition: 0.5s;
 }
 
-#formHover {
+div>.formHover {
     font-size: 35px;
     font-weight: bold;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(48, 48, 132); 
     opacity: 0.7;
     display: grid; 
@@ -140,11 +140,14 @@ h1 {
     visibility: hidden;
 }
 
-.projects>div>div>div:hover {
-    font-size: 40px;
-    visibility: visible;
+div>.formHover:hover {
+    font-size: 35px;
+    color: rgb(48, 48, 132); 
+    font-family:Arial, Helvetica, sans-serif ;
     filter: brightness(120%);
     transition: 0.5s;
+    opacity: 0.7;
+    visibility: visible;
 }
 
 
